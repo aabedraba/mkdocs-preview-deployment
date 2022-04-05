@@ -10,7 +10,6 @@ on:
 
 env: 
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   deploy-preview:
@@ -19,7 +18,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
-      - uses: mshick/add-pr-comment@v1        
+      - uses: mshick/add-pr-comment@v1    
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
         with:
           message: |  
             Successfully deployed preview revision at https://pr-${{github.event.number}}---myapp-abcdef123-ab.a.run.app
