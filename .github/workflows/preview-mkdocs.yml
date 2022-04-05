@@ -23,5 +23,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
         with:
           message: |  
-            Successfully deployed preview revision at https://pr-${{github.event.number}}---myapp-abcdef123-ab.a.run.app
+            Successfully deployed preview revision at https://mkdocs-preview.fly.dev
           allow-repeats: false
