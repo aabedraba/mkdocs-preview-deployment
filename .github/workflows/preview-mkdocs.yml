@@ -8,15 +8,14 @@ on:
       - 'docs/**'
       - mkdocs.yml
 
-env: 
-  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-
 jobs:
   deploy-preview:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - uses: superfly/flyctl-actions/setup-flyctl@master
+        env: 
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
       - run: flyctl deploy --remote-only
       - uses: mshick/add-pr-comment@v1    
         env:
