@@ -11,3 +11,5 @@ Alternatives I found were Vercel (20$ per user) and Netlify (19$ per user) - in 
  2 - Github actions builds and deploys the PR changes to https://fly.io
  
  3 - [Get a comment with a preview to your deployment](https://github.com/aabedraba/mkdocs-preview-deployment/pull/2#issuecomment-1089190308)
+
+![image](https://user-images.githubusercontent.com/27779735/165138558-6e6fd9f6-364d-43dc-aead-133140073ccd.png)
