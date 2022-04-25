@@ -2,8 +2,6 @@
 
 Update your Docs (or website code) and get a preview link as a comment in your PR, so you can review the changes in a working website before merging your PRs. 
 
-For free ([fly.io](https://fly.io) has a generous [free tier](https://fly.io/docs/about/pricing)).
-
 Alternatives I found were Vercel (20$ per user) and Netlify (19$ per user) - in their teams' pricing.
 
 ## Arch 
